@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do You Love Me?</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffe6f2;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #question {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    #additional-text {
+        font-size: 16px;
+        color: #666;
+        margin-top: 10px;
+    }
+    #buttons {
+        margin-top: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    #yes {
+        background-color: #4CAF50; 
+        color: white;
+    }
+    #no {
+        background-color: #f44336; 
+        color: white;
+    }
+    #box {
+        width: 200px;
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="box">
+        <img src="https://i.pinimg.com/originals/8a/f0/8a/8af08a3556c6e66f5ce88539183efd23.gif" alt="cat">
+    </div>
+    <div id="question">Do you love me?</div>
+    <div id="additional-text">Ha bol de.. ha bol de..🥺</div>
+    <div id="buttons">
+        <button class="button" id="yes" onclick="openPage()">Yes</button>
+        <button class="button" id="no" onclick="openNewPage()">No</button>
+    </div>
+</div>
+<script>
+    function openNewPage() {
+        window.open('soch_le.html', '_blank'); 
+    }
+    function openPage() {
+        window.open('hehe.html', '_blank'); 
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manja na! Kitna bhav Khaegi😖😭 </title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffe6f2; 
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #question {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    #additional-text {
+        font-size: 16px;
+        color: #666;
+        margin-top: 10px;
+    }
+    #buttons {
+        margin-top: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    #yes {
+        background-color: #4CAF50; 
+        color: white;
+    }
+    #movingButton {
+        background-color: #f44336; 
+        color: white;
+    }
+    #box {
+        width: 200px;
+        height: 200px;
+        background: url('https://i.pinimg.com/originals/ac/1c/b3/ac1cb3d2baa33b1bbba1e409fbfb70b1.gif') center/cover;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="box"></div>
+    <div id="question">Manja na! Kitna bhav Khaegi😖😭  </div>
+    <div id="additional-text">Bht glt hai 😒😒😒</div>
+    <div id="buttons">
+        <button class="button" id="yes" onclick="openNewPage()">Yes</button>
+        <button class="button" id="movingButton">No</button>
+    </div>
+</div>
+<script>
+    function openNewPage() {
+        window.open('hehe.html', '_blank'); 
+    }
+
+    window.onload = function() {
+    const button = document.getElementById('movingButton');
+
+    button.addEventListener('mouseover', () => {
+      const newX = Math.random() * (window.innerWidth - button.clientWidth);
+      const newY = Math.random() * (window.innerHeight - button.clientHeight);
+      button.style.position = 'absolute';
+      button.style.left = `${newX}px`;
+      button.style.top = `${newY}px`;
+    });
+  }
+</script>
+</body>
+</html>

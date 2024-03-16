@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soch le acche se! </title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffe6f2; 
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #question {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    #additional-text {
+        font-size: 16px;
+        color: #666;
+        margin-top: 10px;
+    }
+    #buttons {
+        margin-top: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    #yes {
+        background-color: #4CAF50; 
+        color: white;
+    }
+    #no {
+        background-color: #f44336; 
+        color: white;
+    }
+    #box {
+        width: 200px;
+        height: 200px;
+        background: url('https://media1.tenor.com/m/QjqrLB0Sw30AAAAC/sad-cat.gif') center/cover;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="box"></div>
+    <div id="question">Soch le acche se!🙄 </div>
+    <div id="additional-text">Itni jaldi bhi kya hai!😑</div>
+    <div id="buttons">
+        <button class="button" id="yes" onclick="openPage()">Yes</button>
+        <button class="button" id="no" onclick="openNewPage()">No</button>
+    </div>
+</div>
+<script>
+    function openNewPage() {
+        window.open('ek_our_bar.html', '_blank'); 
+    }
+    function openPage() {
+        window.open('hehe.html', '_blank'); 
+    }
+</script>
+</body>
+</html>
